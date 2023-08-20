@@ -1,3 +1,4 @@
+
 <template>
   <v-app dark>
     <v-navigation-drawer
@@ -7,6 +8,7 @@
       fixed
       app
     >
+    
       <v-list>
         <v-list-item
           v-for="(item, i) in items"
@@ -86,7 +88,10 @@
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
+  
+
 </template>
+
 
 <script>
 export default {
@@ -111,7 +116,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'Dalen'
     }
   }
 }
