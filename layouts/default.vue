@@ -84,8 +84,8 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          title: 'Meet the Team!',
+          to: '/team'
         },
         {
           icon: 'mdi-domain',
