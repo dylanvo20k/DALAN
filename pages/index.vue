@@ -3,7 +3,7 @@
     <img src="prehack.png" alt="Background Image" />
     <div class = "vape">
       <h1>dalan</h1>
-      <span class="overlay" >based out of mukilteo, wa</span>
+      <span class="overlay" >based out of mukilteo, WA</span>
     </div>
   </div>
 </template>
