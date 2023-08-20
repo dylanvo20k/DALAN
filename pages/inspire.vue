@@ -8,6 +8,7 @@
             Jalen Paige
           </v-card-title>
           <v-card-text class="description">
+
             Hello! I'm a rising sophomore from Santa Clara University who loves music and long walks on the beach. I also
             love cats.
           </v-card-text>
@@ -75,6 +76,13 @@ export default {
 }
 
 .name {
+  width: 50%;
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.name2 {
   width: 50%;
   color: white;
   font-size: 2.5rem;

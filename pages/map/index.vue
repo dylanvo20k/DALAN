@@ -19,7 +19,7 @@
             <Map class="map" :coordinates="currentCoordinates"></Map>
             <div class="side-content">
                 <v-btn @click="resetPage" class="btn"> Enter new address.</v-btn>
-                <span> {{ "The map indicates air-quality using the Air Quality Index, which is based on a variety of factores.Green is the highest, followed by, light green, yellow, orange, and, finally, Red- the worst quality air." }} </span>
+                <span class="side-text"> {{ "The map indicates air-quality using the Air Quality Index, which is based on a variety of factores.Green is the highest, followed by, light green, yellow, orange, and, finally, Red- the worst quality air." }} </span>
             </div>
         </div>
     </div>
@@ -126,10 +126,16 @@ export default {
 }
 
 .side-content {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    padding: 5%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.side-text {
+    padding: 10rem;
 }
 
 .btn {
