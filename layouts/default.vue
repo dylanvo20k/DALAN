@@ -91,6 +91,11 @@ export default {
           icon: 'mdi-domain',
           title: 'View The Map',
           to: '/map'
+        },
+        {
+          icon: 'mdi-dialpad',
+          title: 'Our Vision',
+          to: '/about'
         }
       ],
       miniVariant: false,
