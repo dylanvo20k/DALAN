@@ -63,12 +63,12 @@ export default {
     }
     if (response) {
 
-      mapboxgl.accessToken = 'pk.eyJ1IjoiamFsZW5wYWlnZSIsImEiOiJjbGxoZ2hyYWYxOXBiM3JxbHZiaWs3cnptIn0.WfyEN9vvHlJpg3euijmy8Q'; // Replace with your Mapbox Access Token
+      mapboxgl.accessToken = 'pk.eyJ1IjoiamFsZW5wYWlnZSIsImEiOiJjbGxoZ2hyYWYxOXBiM3JxbHZiaWs3cnptIn0.WfyEN9vvHlJpg3euijmy8Q'; 
 
       const map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11', // Replace with your desired map style
-        center: [realLon, realLat], // Replace with your desired center coordinates
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [realLon, realLat], 
         zoom: 10,
       });
 
@@ -92,16 +92,16 @@ export default {
           paint: {
             'fill-color': [
               'match',
-              ['get', 'aqi'], // Replace 'yourProperty' with the property you want to base the color on
+              ['get', 'aqi'], 
               1, 'rgb(50, 205, 50)',
               2, 'rgb(50, 205, 25)',
               3, 'rgb(255, 255, 0)',
               4, 'rgb(255, 140, 0)',
               5, 'rgb(255, 0, 0)',
-              /* Add more conditions and colors as needed */
-              'rgb(0, 0, 0)'// Default color if none of the conditions match
+              
+              'rgb(0, 0, 0)'
             ],
-            'fill-opacity': 0.5, // Adjust opacity as needed
+            'fill-opacity': 0.5, 
           },
         });
       });
@@ -109,8 +109,8 @@ export default {
   },
   props: {
     coordinates: {
-      type: Array, // Define the type of data expected (in this case, an array for coordinates)
-      required: true, // Make the prop required if you want to ensure it's always provided
+      type: Array, 
+      required: true, 
     }
   }
 }
