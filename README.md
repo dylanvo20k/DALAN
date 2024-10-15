@@ -1,4 +1,4 @@
-# PeddieProject
+# DALAN at PeddieHacks
 
 ## Build Setup
 
